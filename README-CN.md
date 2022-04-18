@@ -7,7 +7,6 @@
 # Demo运行
 1. 阅读[项目及权限](https://developer.netless.link/document-zh/home/project-and-authority)，申请 APP Identifier 及 获取 SDK Token
 2. 配置 app 目录下 string_white_sdk_config.xml 中相应参数
-
 # 项目集成
 
 ## 前提条件
