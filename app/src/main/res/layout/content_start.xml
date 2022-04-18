@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".StartActivity"
+    tools:showIn="@layout/activity_start">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="房间ID:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="@string/uuid"
+        android:background="@drawable/rect_grey"
+        android:ems="10"
+        android:hint="@string/uuid"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_token"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Token:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_token"
+        app:layout_constraintEnd_toStartOf="@+id/editText_token"
+        app:layout_constraintTop_toTopOf="@+id/editText_token" />
+
+    <EditText
+        android:id="@+id/editText_token"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rect_grey"
+        android:ems="10"
+        android:hint="whitebord_token"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_rtcchannel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Rtc:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_rtc"
+        app:layout_constraintEnd_toStartOf="@+id/editText_rtc"
+        app:layout_constraintTop_toTopOf="@+id/editText_rtc" />
+
+    <EditText
+        android:id="@+id/editText_rtc"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="rtcchannel"
+        android:background="@drawable/rect_grey"
+        android:ems="10"
+        android:hint="rtc_channel"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_token"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/tv_rtctoken"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Token:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_rtctoken"
+        app:layout_constraintEnd_toStartOf="@+id/editText_rtctoken"
+        app:layout_constraintTop_toTopOf="@+id/editText_rtctoken" />
+
+    <EditText
+        android:id="@+id/editText_rtctoken"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_grey"
+        android:ems="10"
+        android:hint="rtc_token"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_rtc"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="joinRoom"
+        android:text="@string/join"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_rtctoken" />
+
+    <!--    <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="joinNewRoom"
+            android:text="@string/create"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

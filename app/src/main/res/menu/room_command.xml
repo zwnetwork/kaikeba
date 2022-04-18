@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Settings, should always be in the overflow -->
+    <!--<item android:id="@+id/bound"-->
+    <!--android:onClick="setBound"-->
+    <!--android:title="@string/set_bound" />-->
+    <!--    <item
+            android:id="@+id/reconnect"
+            android:onClick="reconnect"
+            android:title="@string/reconnect" />
+        <item
+            android:id="@+id/disconnect"
+            android:onClick="disconnect"
+            android:title="@string/disconnect_command" />-->
+    <item
+        android:id="@+id/orientation"
+        android:onClick="orientation"
+        android:title="@string/orientation" />
+    <!--    <item
+            android:id="@+id/getRoomPhase"
+            android:onClick="getRoomPhase"
+            android:title="@string/getRoomPhase_command" />
+        <item
+            android:id="@+id/getRoomState"
+            android:onClick="getRoomState"
+            android:title="@string/getRoomState_command" />-->
+    <item
+        android:id="@+id/cleanScene"
+        android:onClick="cleanScene"
+        android:title="@string/cleanScene" />
+    <item
+        android:id="@+id/setWritableFalse"
+        android:onClick="setWritableFalse"
+        android:title="@string/writable_false_command" />
+    <item
+        android:id="@+id/setWritableTrue"
+        android:onClick="setWritableTrue"
+        android:title="@string/writable_true_command" />
+</menu>

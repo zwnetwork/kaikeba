@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 配置sdk app 参数-->
+    <string name="sdk_app_id">gwyB4LrYEeyX07cZHOwpQw/YT2tQwMLLcRYKA</string>
+    <string name="sdk_app_token">NETLESSSDK_YWs9UEpfOWU2c1FibGVHOGJ2TiZub25jZT1lNGY3NTc0MC1iYWQ4LTExZWMtOTdkMy1iNzE5MWNlYzI5NDMmcm9sZT0wJnNpZz1mZjhiYTMxNjg5Y2YxYTNmNjc0MzU4NDllNzFhNDNkNzY3ZTNjZGI4Y2VjMWU4ZDcyZDc2M2MzNDZhM2U2MDk4</string>
+    <!-- 配置有效room参数方便测试 -->
+    <string name="room_uuid">3f5aa6d0bc9411eca37e6fd3f4c727f6</string>
+    <string name="room_token">NETLESSROOM_YWs9UEpfOWU2c1FibGVHOGJ2TiZub25jZT0xNjUwMDEwNTQ0OTkyMDAmcm9sZT0wJnNpZz1kYWI0ZWY2MGEwNTY1NDdiMjdmOTFjMmVkOGVhNThlN2RkNWI0MjNiNzdjYjYzZWNiODRhMWJkOTVkMDkwOWUyJnV1aWQ9M2Y1YWE2ZDBiYzk0MTFlY2EzN2U2ZmQzZjRjNzI3ZjY</string>
+    <string name="agora_app_id">e9a9769f4d244562ac646f4a4084101f</string>
+</resources>
